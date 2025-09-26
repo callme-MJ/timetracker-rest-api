@@ -10,7 +10,7 @@ import { TimeModule } from './time.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRoot(process.env.MONGO_URI ?? 'mongodb://127.0.0.1:27017/time_tracker'),
+    MongooseModule.forRoot(process.env.MONGO_URI ?? 'mongodb+srv://jabir:1234@cluster0.vf1ye.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
     UsersModule,
     AuthModule,
     TimeModule,

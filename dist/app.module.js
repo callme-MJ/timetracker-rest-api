@@ -22,7 +22,7 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             config_1.ConfigModule.forRoot({ isGlobal: true }),
-            mongoose_1.MongooseModule.forRoot(process.env.MONGO_URI ?? 'mongodb://127.0.0.1:27017/time_tracker'),
+            mongoose_1.MongooseModule.forRoot(process.env.MONGO_URI ?? 'mongodb+srv://jabir:1234@cluster0.vf1ye.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
             users_module_1.UsersModule,
             auth_module_1.AuthModule,
             time_module_1.TimeModule,
