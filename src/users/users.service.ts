@@ -25,6 +25,8 @@ export class UsersService {
   }
 
   async listEmployees() {
+    console.log("heree");
+    
     return this.userModel.find({}).select('-passwordHash').exec();
   }
 

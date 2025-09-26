@@ -35,6 +35,7 @@ let UsersService = class UsersService {
         return this.userModel.findById(id).exec();
     }
     async listEmployees() {
+        console.log("heree");
         return this.userModel.find({}).select('-passwordHash').exec();
     }
     async resetPassword(userId, newPassword) {
